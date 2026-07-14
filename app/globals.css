@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-sand text-ink font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-silver text-ink;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Padrão de azulejo — usado como textura de fundo no hero, footer e mapa */
+  .tile-pattern {
+    background-image: radial-gradient(
+        circle at 0 0,
+        transparent 15px,
+        theme("colors.silver") 15.5px,
+        transparent 16.5px
+      ),
+      radial-gradient(
+        circle at 40px 40px,
+        transparent 15px,
+        theme("colors.silver") 15.5px,
+        transparent 16.5px
+      );
+    background-size: 40px 40px;
+    opacity: 0.08;
+  }
+
+  /* Elemento de entrada ao rolar a página */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* Linha do "pulso" nos divisores de seção */
+  .pulse-line {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pulse-line {
+      animation: none !important;
+      stroke-dashoffset: 0;
+    }
+  }
+}
