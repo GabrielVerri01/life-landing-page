@@ -2,7 +2,7 @@ import { Eyebrow, Wrap } from "./ui";
 
 const rows = [
   { k: "Bairro", v: "Jardim Renascença, São Luís – MA" },
-  { k: "WhatsApp", v: "(98) 90000-0000" }, // EDITAR
+  { k: "WhatsApp", v: "(98) 98891-2900" }, // EDITAR
   { k: "Instagram", v: "@life.saudeintegrativa" },
   {
     k: "Horário",

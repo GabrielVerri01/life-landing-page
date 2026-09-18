@@ -34,9 +34,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-[0.78rem] leading-relaxed text-sand/40">
-          Jardim Renascença, São Luís – MA. Conteúdo de exemplo gerado para
-          revisão — números, depoimentos e contato devem ser conferidos antes
-          da publicação.
+          Jardim Renascença, São Luís – MA. 
         </div>
       </Wrap>
     </footer>

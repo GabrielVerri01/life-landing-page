@@ -18,8 +18,7 @@ export default function Results() {
             O que muda quando treino e nutrição andam juntos.
           </h2>
           <p className="mt-4 text-[1.04rem] leading-relaxed text-sand/70">
-            Exemplos do tipo de resultado que o método busca entregar —
-            troque por depoimentos reais de alunos antes de publicar.
+            Exemplos do tipo de resultado que o método busca entregar:
           </p>
         </div>
 
@@ -33,8 +32,7 @@ export default function Results() {
                 {quote}
               </div>
               <div className="border-t border-sand/[0.14] pt-3.5 text-[0.82rem] text-sand/70">
-                — <b className="font-semibold text-silver">Depoimento-exemplo</b>{" "}
-                · substituir por aluno real
+                <b className="font-semibold text-silver"></b>{" "}
               </div>
             </div>
           ))}
