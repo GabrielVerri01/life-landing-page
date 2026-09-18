@@ -6,7 +6,7 @@ const rows = [
   { k: "Instagram", v: "@life.saudeintegrativa" },
   {
     k: "Horário",
-    v: "Segunda a sexta, 6h–21h · Sábado, 8h–12h (editar)",
+    v: "Segunda a sexta, 6h–22h · Sábado, 7h–13h",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function LocationSection() {
               </div>
               <a
                 // href="https://www.google.com/maps/search/?api=1&query=Jardim+Renascença+São+Luís+MA"
-                href="https://maps.app.goo.gl/yndF1V9gBPjxfuUTA"
+                href="https://maps.app.goo.gl/XHqeqaRVrDbNgqTx8"
                 target="_blank"
                 rel="noopener"
                 className="text-[0.86rem] text-silverdim underline underline-offset-4 hover:text-silver"
